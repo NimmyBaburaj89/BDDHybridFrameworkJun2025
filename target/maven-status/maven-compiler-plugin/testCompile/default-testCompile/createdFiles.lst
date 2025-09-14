@@ -1,3 +1,4 @@
+com\qa\pages\LoginPage.class
 com\qa\runner\Runner.class
 com\qa\util\ElementActions.class
 com\qa\base\Base.class

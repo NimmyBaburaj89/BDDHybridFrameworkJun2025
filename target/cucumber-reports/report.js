@@ -116,6 +116,10 @@ formatter.examples({
   ],
   "keyword": "Examples"
 });
+formatter.before({
+  "duration": 187200,
+  "status": "passed"
+});
 formatter.scenario({
   "line": 19,
   "name": "I am able to add edit and search and delete the  employee",
@@ -212,8 +216,10 @@ formatter.step({
 formatter.match({
   "location": "EmployeeCRUD.navigate_to_PIM_after_log_in_with_Admin_user()"
 });
+formatter.write("Starting the Orange HRM application in browser");
+formatter.embedding("image/png", "embedded0.png");
 formatter.result({
-  "duration": 116053201,
+  "duration": 24343521500,
   "status": "passed"
 });
 formatter.match({
@@ -234,7 +240,7 @@ formatter.match({
   "location": "EmployeeCRUD.i_Add_employee_with_first_name_as_and_mname_as_and_lName_as(String,String,String)"
 });
 formatter.result({
-  "duration": 3611100,
+  "duration": 1916500,
   "status": "passed"
 });
 formatter.match({
@@ -255,28 +261,33 @@ formatter.match({
   "location": "EmployeeCRUD.i_verify_employeeAdded_in_list_with_first_name_as_and_mname_as_and_lName_as(String,String,String)"
 });
 formatter.result({
-  "duration": 233600,
+  "duration": 143500,
   "status": "passed"
 });
 formatter.match({
   "location": "EmployeeCRUD.i_click_on_Edit_button_and_update_below_values_and_save_the_Data(DataTable)"
 });
 formatter.result({
-  "duration": 1527500,
+  "duration": 938200,
   "status": "passed"
 });
 formatter.match({
   "location": "EmployeeCRUD.i_search_the_employee_and_ensure_that_it_is_searched_using_below_values(DataTable)"
 });
 formatter.result({
-  "duration": 106700,
+  "duration": 49300,
   "status": "passed"
 });
 formatter.match({
   "location": "EmployeeCRUD.i_select_and_Delete_the_Updated_Employee_and_verify_employee_is_not_in_search_result()"
 });
 formatter.result({
-  "duration": 57301,
+  "duration": 51300,
+  "status": "passed"
+});
+formatter.write("Closing the application");
+formatter.after({
+  "duration": 738342600,
   "status": "passed"
 });
 });

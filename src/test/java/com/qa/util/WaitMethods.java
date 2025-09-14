@@ -27,14 +27,13 @@ public class WaitMethods {
 	 * @param milisec
 	 *            This method will help to wait for specified time
 	 */
-	public void staticWait(long milisec) {
-		try {
-			Thread.sleep(milisec);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+	public static void staticWait(long milisec) {
+        try {
+            Thread.sleep(milisec);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 
 	/**
 	 * @author Nimmy This method will wait for the condition of specific element

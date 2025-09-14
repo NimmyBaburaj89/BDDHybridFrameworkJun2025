@@ -1,17 +1,41 @@
 package com.qa.stepdefinations;
 
+import com.qa.base.Base;
+import com.qa.pages.LoginPage;
+import com.qa.util.CaptureScreenshot;
+import com.qa.util.WaitMethods;
+
 import cucumber.api.DataTable;
-import cucumber.api.PendingException;
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class EmployeeCRUD {
+public class EmployeeCRUD extends Base {
+	
+	Scenario scenario;
+	LoginPage objLoginPage;
+	
+	@Before
+	public void logintoApplication(Scenario scenario) {
 
+		this.scenario = scenario;
+	}
+	
+	
+	
 	@Given("^Navigate to PIM after log in with Admin user$")
 	public void navigate_to_PIM_after_log_in_with_Admin_user() throws Throwable {
-		 System.out.println("Selenium code to be added!");
-	   
+		
+		scenario.write("Starting the Orange HRM application in browser");
+		driver=initializeWebDriver();
+		WaitMethods.staticWait(5000);
+		scenario.embed(CaptureScreenshot.captureImage(driver), "image/png");
+		
+		
+		
 	}
 
 	@When("^I Add employee with  first name as \"([^\"]*)\" and mname as \"([^\"]*)\" and lName as \"([^\"]*)\"$")
@@ -44,5 +68,10 @@ public class EmployeeCRUD {
 		 System.out.println("Selenium code to be added!");
 	}	
 	
-	
+	@After
+	public void closeApplication(Scenario scenario) {
+
+		scenario.write("Closing the application");
+		closeBrowser();
+	}
 }
