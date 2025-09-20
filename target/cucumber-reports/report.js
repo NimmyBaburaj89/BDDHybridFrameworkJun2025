@@ -117,7 +117,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 187200,
+  "duration": 212001,
   "status": "passed"
 });
 formatter.scenario({
@@ -218,8 +218,12 @@ formatter.match({
 });
 formatter.write("Starting the Orange HRM application in browser");
 formatter.embedding("image/png", "embedded0.png");
+formatter.write("Logging into Orange HRM application");
+formatter.embedding("image/png", "embedded1.png");
+formatter.write("Navigating to PIM Page");
+formatter.embedding("image/png", "embedded2.png");
 formatter.result({
-  "duration": 24343521500,
+  "duration": 64715574300,
   "status": "passed"
 });
 formatter.match({
@@ -239,8 +243,10 @@ formatter.match({
   ],
   "location": "EmployeeCRUD.i_Add_employee_with_first_name_as_and_mname_as_and_lName_as(String,String,String)"
 });
+formatter.write(" Adding new Employee");
+formatter.embedding("image/png", "embedded3.png");
 formatter.result({
-  "duration": 1916500,
+  "duration": 17928975800,
   "status": "passed"
 });
 formatter.match({
@@ -261,33 +267,33 @@ formatter.match({
   "location": "EmployeeCRUD.i_verify_employeeAdded_in_list_with_first_name_as_and_mname_as_and_lName_as(String,String,String)"
 });
 formatter.result({
-  "duration": 143500,
+  "duration": 138400,
   "status": "passed"
 });
 formatter.match({
   "location": "EmployeeCRUD.i_click_on_Edit_button_and_update_below_values_and_save_the_Data(DataTable)"
 });
 formatter.result({
-  "duration": 938200,
+  "duration": 1484701,
   "status": "passed"
 });
 formatter.match({
   "location": "EmployeeCRUD.i_search_the_employee_and_ensure_that_it_is_searched_using_below_values(DataTable)"
 });
 formatter.result({
-  "duration": 49300,
+  "duration": 61700,
   "status": "passed"
 });
 formatter.match({
   "location": "EmployeeCRUD.i_select_and_Delete_the_Updated_Employee_and_verify_employee_is_not_in_search_result()"
 });
 formatter.result({
-  "duration": 51300,
+  "duration": 42600,
   "status": "passed"
 });
 formatter.write("Closing the application");
 formatter.after({
-  "duration": 738342600,
+  "duration": 772173999,
   "status": "passed"
 });
 });
