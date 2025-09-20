@@ -65,8 +65,7 @@ public class EmployeeCRUD extends Base {
 	}
 
 	@Then("^I  verify employeeAdded in list with  first name as \"([^\"]*)\" and mname as \"([^\"]*)\" and lName as \"([^\"]*)\"$")
-	public void i_verify_employeeAdded_in_list_with_first_name_as_and_mname_as_and_lName_as(String arg1, String arg2,
-			String arg3) throws Throwable {
+	public void i_verify_employeeAdded_in_list_with_first_name_as_and_mname_as_and_lName_as(String fName, String mName, String lName) throws Throwable {
 
 		System.out.println("Selenium code to be added!");
 	}

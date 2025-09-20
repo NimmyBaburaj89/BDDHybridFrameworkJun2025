@@ -15,7 +15,7 @@ public class AddEmployeePage {
 	WebDriver driver;
 	Scenario scenario;
 	
-	//Page object repository-Element located by find by annotation
+	//Page object repository-Add employee page
 	
 	@FindBy(xpath = "//span[text()='PIM']")
 	WebElement pimPageLink;
@@ -34,6 +34,20 @@ public class AddEmployeePage {
 
 	@FindBy(xpath = "//button[text()=' Save ']")
 	WebElement saveButton;
+	
+	//Page object repository-For employee search page
+	
+	@FindBy(xpath = "//a[text()='Employee List']")
+	WebElement empListPageLink;
+
+	@FindBy(xpath = "//label[text()='Employee Name']/following::input[1]")
+	WebElement searchByEmpNamefield;
+
+	@FindBy(xpath = "//button[text()=' Search ']")
+	WebElement empSearchButton;
+
+	@FindBy(xpath = "//div[@class='oxd-table-row oxd-table-row--with-border oxd-table-row--clickable']/child::div[3]/child::div[1]")
+	WebElement searchedEmpFandMname;
 	
 
 	
@@ -80,6 +94,20 @@ public void addnewEmployee(String fName, String mName,String lName){
 	WaitMethods.staticWait(5000);
 }
 	
+
+
+/**
+ * Search employee
+ */
+public void navigateToEmpListPage(){
+	ElementActions.clickElement(driver, empListPageLink, scenario);
+}
+
+public  String searchEmp(String fName,String mName){
 	
+	ElementActions.sendKeys(driver, searchByEmpNamefield, scenario, fName+mName);
+	ElementActions.clickElement(driver, empSearchButton, scenario);
+	return ElementActions.getText(driver, searchedEmpFandMname, scenario);
+}	
 
 }
