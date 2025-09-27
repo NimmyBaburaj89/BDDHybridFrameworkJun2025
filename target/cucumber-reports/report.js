@@ -117,7 +117,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 212001,
+  "duration": 115400,
   "status": "passed"
 });
 formatter.scenario({
@@ -223,7 +223,7 @@ formatter.embedding("image/png", "embedded1.png");
 formatter.write("Navigating to PIM Page");
 formatter.embedding("image/png", "embedded2.png");
 formatter.result({
-  "duration": 64715574300,
+  "duration": 25017548100,
   "status": "passed"
 });
 formatter.match({
@@ -246,7 +246,7 @@ formatter.match({
 formatter.write(" Adding new Employee");
 formatter.embedding("image/png", "embedded3.png");
 formatter.result({
-  "duration": 17928975800,
+  "duration": 17417803900,
   "status": "passed"
 });
 formatter.match({
@@ -266,34 +266,42 @@ formatter.match({
   ],
   "location": "EmployeeCRUD.i_verify_employeeAdded_in_list_with_first_name_as_and_mname_as_and_lName_as(String,String,String)"
 });
+formatter.write(" Searching and verifying employee is added ");
+formatter.embedding("image/png", "embedded4.png");
 formatter.result({
-  "duration": 138400,
+  "duration": 16314249500,
   "status": "passed"
 });
 formatter.match({
   "location": "EmployeeCRUD.i_click_on_Edit_button_and_update_below_values_and_save_the_Data(DataTable)"
 });
+formatter.write(" Editing the emp information ");
+formatter.embedding("image/png", "embedded5.png");
 formatter.result({
-  "duration": 1484701,
+  "duration": 17380305100,
   "status": "passed"
 });
 formatter.match({
   "location": "EmployeeCRUD.i_search_the_employee_and_ensure_that_it_is_searched_using_below_values(DataTable)"
 });
+formatter.write(" Searching and verifying employee is updated ");
+formatter.embedding("image/png", "embedded6.png");
 formatter.result({
-  "duration": 61700,
+  "duration": 16048540200,
   "status": "passed"
 });
 formatter.match({
   "location": "EmployeeCRUD.i_select_and_Delete_the_Updated_Employee_and_verify_employee_is_not_in_search_result()"
 });
+formatter.write(" DeletingSearchedUpdated Record  ");
+formatter.embedding("image/png", "embedded7.png");
 formatter.result({
-  "duration": 42600,
+  "duration": 10696268400,
   "status": "passed"
 });
 formatter.write("Closing the application");
 formatter.after({
-  "duration": 772173999,
+  "duration": 821452500,
   "status": "passed"
 });
 });
