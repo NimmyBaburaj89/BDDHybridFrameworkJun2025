@@ -1,7 +1,9 @@
 package com.qa.pages;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -49,7 +51,35 @@ public class AddEmployeePage {
 	@FindBy(xpath = "//div[@class='oxd-table-row oxd-table-row--with-border oxd-table-row--clickable']/child::div[3]/child::div[1]")
 	WebElement searchedEmpFandMname;
 	
+	//Page repo for edit employee
+	
 
+	@FindBy(xpath = "//div[@class='oxd-table-cell-actions']/child::button/i[@class='oxd-icon bi-pencil-fill']")
+	WebElement editEmpButton;
+	
+	@FindBy(xpath = "//label[text()= 'Employee Full Name']/following::input[@name='firstName']")
+	WebElement empfirstName;
+	
+	@FindBy(xpath = "//label[text()= 'Employee Full Name']/following::input[@name='middleName']")
+	WebElement empmiddleName;
+
+	@FindBy(xpath = "//label[text()= 'Employee Full Name']/following::input[@name='lastName']")
+	WebElement emplastName;
+	
+	@FindBy(xpath = "//button[text()=' Save ']")
+	WebElement editandSaveButton;
+	
+	//Page repo for delete employee
+	
+	@FindBy(xpath = "//div[@class='oxd-table-cell-actions']/child::button/i[@class='oxd-icon bi-trash']")
+	WebElement deleteSearchedEmp;
+	
+	@FindBy(xpath = "//button[text()=' Yes, Delete ']")
+	WebElement deleteConfirmButton;
+	
+	@FindBy(xpath = "//span[text()='No Records Found']")
+	WebElement noRecordFoundTextAfterDelete;
+	
 	
 	//Page class constructer
 		
@@ -103,11 +133,43 @@ public void navigateToEmpListPage(){
 	ElementActions.clickElement(driver, empListPageLink, scenario);
 }
 
-public  String searchEmp(String fName,String mName){
-	
-	ElementActions.sendKeys(driver, searchByEmpNamefield, scenario, fName+mName);
+public String searchEmp(String fName, String mName) {
+	WaitMethods.staticWait(5000);
+	ElementActions.sendKeys(driver, searchByEmpNamefield, scenario, fName +" " + mName);
+	WaitMethods.staticWait(2000);
+	Actions objactions = new Actions(driver);
+	objactions.sendKeys(Keys.ARROW_DOWN).build().perform();
+	WaitMethods.staticWait(2000);
 	ElementActions.clickElement(driver, empSearchButton, scenario);
 	return ElementActions.getText(driver, searchedEmpFandMname, scenario);
 }	
 
+/**
+ * Edit employee
+ * @param fnameupendtext
+ * @param mNameupendtext
+ * @param lNameupendtext
+ */
+public void editEmp(String fnameupendtext, String mNameupendtext, String lNameupendtext) {
+
+	ElementActions.clickElement(driver, editEmpButton, scenario);
+	WaitMethods.staticWait(5000);
+	ElementActions.sendKeys(driver, empfirstName, scenario, fnameupendtext);
+	ElementActions.sendKeys(driver, empmiddleName, scenario, mNameupendtext);
+	ElementActions.sendKeys(driver, emplastName, scenario, lNameupendtext);
+	WaitMethods.staticWait(5000);
+	ElementActions.clickElement(driver, editandSaveButton, scenario);
+
+}
+
+/**
+ * Delete employee after update
+ * @return
+ */
+public String deleteUdpateEmp() {
+	ElementActions.clickElement(driver, deleteSearchedEmp, scenario);
+	ElementActions.clickElement(driver, deleteConfirmButton, scenario);
+	WaitMethods.staticWait(5000);
+	return ElementActions.getText(driver, noRecordFoundTextAfterDelete, scenario);
+}
 }
