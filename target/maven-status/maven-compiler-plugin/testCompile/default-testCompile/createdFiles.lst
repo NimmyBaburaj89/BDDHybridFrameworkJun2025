@@ -1,6 +1,8 @@
 com\qa\pages\LoginPage.class
+com\qa\pages\DashboardPage.class
 com\qa\util\ElementActions.class
 com\qa\pages\AddEmployeePage.class
+com\qa\stepdefinations\DashboardWidgetData.class
 com\qa\util\CaptureScreenshot.class
 com\qa\pages\BuzzPage.class
 com\qa\util\ReadProperties.class
