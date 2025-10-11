@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/features", glue = { "com.qa.stepdefinations" }, tags = {
-		"@BuzzCRUDTest" }, plugin = { "pretty", "json:target/cucumber-reports/Cucumber.json" }, monochrome = true)
+		"@DashboardTimeWidget" }, plugin = { "pretty", "json:target/cucumber-reports/Cucumber.json" }, monochrome = true)
 
 //html:target/cucumber-reports
 
