@@ -1,8 +1,10 @@
 C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\src\test\java\com\qa\pages\AddEmployeePage.java
 C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\src\test\java\com\qa\util\WaitMethods.java
+C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\src\test\java\com\qa\stepdefinations\LeaveTypeCrudSteps.java
 C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\src\test\java\com\qa\util\ElementActions.java
 C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\src\test\java\com\qa\stepdefinations\EmployeeCRUD.java
 C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\src\test\java\com\qa\stepdefinations\BuzzCrudSTeps.java
+C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\src\test\java\com\qa\pages\LeavePage.java
 C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\src\test\java\com\qa\pages\DashboardPage.java
 C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\src\test\java\com\qa\util\ReadProperties.java
 C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\src\test\java\com\qa\pages\LoginPage.java

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.qa.runner.Runner" time="20.589" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.qa.runner.Runner" time="82.954" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_271\jre\bin"/>
     <property name="java.vm.version" value="25.271-b09"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Lenovo\.jenkins\workspace\BDDHybridFramework"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\Lenovo\.jenkins\workspace\BDDHybridFramework"/>
+    <property name="user.dir" value="C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025"/>
     <property name="java.runtime.version" value="1.8.0_271-b09"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_271\jre\lib\endorsed"/>
@@ -28,7 +28,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="C:\LocalMaven\apache-maven-3.9.9\apache-maven-3.9.9\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_271\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\LocalMaven\apache-maven-3.9.9\apache-maven-3.9.9/bin;C:\Program Files\Java\jdk1.8.0_271/bin;C:\Program Files\Java\jdk1.8.0_271/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\LocalMaven\apache-maven-3.9.9\apache-maven-3.9.9\bin;C:\Program Files\Java\jdk1.8.0_271\bin;C:\Users\Lenovo\AppData\Local\Microsoft\WindowsApps;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_271\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\LocalMaven\apache-maven-3.9.9\apache-maven-3.9.9\bin;C:\Program Files\Java\jdk1.8.0_271\bin;C:\Users\Lenovo\AppData\Local\Microsoft\WindowsApps;."/>
     <property name="maven.conf" value="C:\LocalMaven\apache-maven-3.9.9\apache-maven-3.9.9/conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
@@ -45,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_271\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -f C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\pom.xml clean test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -53,17 +53,21 @@
     <property name="java.version" value="1.8.0_271"/>
     <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_271\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_271\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_271\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="maven.home" value="C:\LocalMaven\apache-maven-3.9.9\apache-maven-3.9.9"/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Given I log in with Admin user and I am at Dashboard Page" classname="Scenario: I am able to view correct information at Time at Work widget" time="0.002"/>
-  <testcase name="When I view the Time at work widget at Dashboard Page" classname="Scenario: I am able to view correct information at Time at Work widget" time="0"/>
-  <testcase name="Then I check below values from the widget showing correct values" classname="Scenario: I am able to view correct information at Time at Work widget" time="0"/>
-  <testcase name="Scenario: I am able to view correct information at Time at Work widget" classname="Scenario: I am able to view correct information at Time at Work widget" time="0.792"/>
+  <testcase name="Given Navigate to LEave after log in with Admin user" classname="Scenario: I am able to add, edit and Delete  LeaveType" time="0.002"/>
+  <testcase name="When I navigate config and then select Leave Types" classname="Scenario: I am able to add, edit and Delete  LeaveType" time="0"/>
+  <testcase name="Then Add the Leave with below field and values and I verify leave is displayed in leave list" classname="Scenario: I am able to add, edit and Delete  LeaveType" time="0"/>
+  <testcase name="Then I Edit the Leave type and change below values and I verify verify the leave name is changed to new name" classname="Scenario: I am able to add, edit and Delete  LeaveType" time="0"/>
+  <testcase name="And Delete the Newly added Leave Type" classname="Scenario: I am able to add, edit and Delete  LeaveType" time="0"/>
+  <testcase name="Scenario: I am able to add, edit and Delete  LeaveType" classname="Scenario: I am able to add, edit and Delete  LeaveType" time="0.708"/>
 </testsuite>
