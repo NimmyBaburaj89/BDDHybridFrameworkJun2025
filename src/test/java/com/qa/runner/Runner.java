@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/features", glue = { "com.qa.stepdefinations" }, tags = {
-		"@RecruitmentCrud" }, plugin = { "pretty", "json:target/cucumber-reports/Cucumber.json" }, monochrome = true)
+		"@EventCRUD" }, plugin = { "pretty", "json:target/cucumber-reports/Cucumber.json" }, monochrome = true)
 
 //html:target/cucumber-reports
 
