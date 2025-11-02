@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.qa.runner.Runner" time="82.954" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.qa.runner.Runner" time="86.648" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_271\jre\bin"/>
@@ -64,10 +64,11 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Given Navigate to LEave after log in with Admin user" classname="Scenario: I am able to add, edit and Delete  LeaveType" time="0.002"/>
-  <testcase name="When I navigate config and then select Leave Types" classname="Scenario: I am able to add, edit and Delete  LeaveType" time="0"/>
-  <testcase name="Then Add the Leave with below field and values and I verify leave is displayed in leave list" classname="Scenario: I am able to add, edit and Delete  LeaveType" time="0"/>
-  <testcase name="Then I Edit the Leave type and change below values and I verify verify the leave name is changed to new name" classname="Scenario: I am able to add, edit and Delete  LeaveType" time="0"/>
-  <testcase name="And Delete the Newly added Leave Type" classname="Scenario: I am able to add, edit and Delete  LeaveType" time="0"/>
-  <testcase name="Scenario: I am able to add, edit and Delete  LeaveType" classname="Scenario: I am able to add, edit and Delete  LeaveType" time="0.708"/>
+  <testcase name="Given Navigate to Claims after log in with Admin user" classname="Scenario: I am able to add view edit and Delete  Event" time="0.002"/>
+  <testcase name="When I navigate to Configuration menu and Select Event option" classname="Scenario: I am able to add view edit and Delete  Event" time="0"/>
+  <testcase name="When I add new Event with below event Name" classname="Scenario: I am able to add view edit and Delete  Event" time="0"/>
+  <testcase name="Then I Search Event with below eventName" classname="Scenario: I am able to add view edit and Delete  Event" time="0.001"/>
+  <testcase name="When I edit the Event and change name" classname="Scenario: I am able to add view edit and Delete  Event" time="0"/>
+  <testcase name="Then I delete the newly added and updated Event" classname="Scenario: I am able to add view edit and Delete  Event" time="0"/>
+  <testcase name="Scenario: I am able to add view edit and Delete  Event" classname="Scenario: I am able to add view edit and Delete  Event" time="0.717"/>
 </testsuite>

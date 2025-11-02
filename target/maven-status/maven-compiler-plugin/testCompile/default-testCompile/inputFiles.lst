@@ -1,3 +1,4 @@
+C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\src\test\java\com\qa\stepdefinations\ClaimsSteps.java
 C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\src\test\java\com\qa\pages\AddEmployeePage.java
 C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\src\test\java\com\qa\util\WaitMethods.java
 C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\src\test\java\com\qa\stepdefinations\LeaveTypeCrudSteps.java
@@ -5,11 +6,15 @@ C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\src\test\java\com\qa\util\El
 C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\src\test\java\com\qa\stepdefinations\EmployeeCRUD.java
 C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\src\test\java\com\qa\stepdefinations\BuzzCrudSTeps.java
 C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\src\test\java\com\qa\pages\LeavePage.java
+C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\src\test\java\com\qa\stepdefinations\RecruitmentSteps.java
 C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\src\test\java\com\qa\pages\DashboardPage.java
 C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\src\test\java\com\qa\util\ReadProperties.java
+C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\src\test\java\com\qa\pages\ClaimsPage.java
 C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\src\test\java\com\qa\pages\LoginPage.java
+C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\src\test\java\com\qa\pages\RecruitmentPage.java
 C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\src\test\java\com\qa\base\Base.java
 C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\src\test\java\com\qa\util\CaptureScreenshot.java
 C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\src\test\java\com\qa\runner\Runner.java
+C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\src\test\java\com\qa\util\GetSystemDates.java
 C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\src\test\java\com\qa\stepdefinations\DashboardWidgetData.java
 C:\Users\Lenovo\workspace\BDDHybridFrameworkJun2025\src\test\java\com\qa\pages\BuzzPage.java
