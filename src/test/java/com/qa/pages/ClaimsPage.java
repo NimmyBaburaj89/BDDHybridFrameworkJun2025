@@ -1,7 +1,9 @@
 package com.qa.pages;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -51,7 +53,48 @@ public class ClaimsPage {
 
 	@FindBy(xpath = "//button[text()=' Yes, Delete ']")
 	WebElement deleteConfirmButton;
+	
+	
+	
+	// Page objects for claims transactions
+		@FindBy(xpath = "//a[text()='Submit Claim']")
+		WebElement submiclaimsMenu ;
+
+		@FindBy(xpath = "//label[text()='Event']/following::i[1]")
+		WebElement eventDropdown;
 		
+		@FindBy(xpath = "//label[text()='Currency']/following::i[1]")
+		WebElement currencyDropdown;
+		
+		
+		@FindBy(xpath = "//button[text()=' Create ']")
+		WebElement createButton;
+		
+		
+		@FindBy(xpath = "//h6[text()='Expenses']/following::button[1]")
+		WebElement addexpenceButton;
+		
+		
+		@FindBy(xpath = "//label[text()='Expense Type']/following::i[1]")
+		WebElement expenceTypeDropdown;
+		
+		
+		@FindBy(xpath = "//label[text()='Expense Type']/following::input[1]")
+		WebElement dateField;
+		
+		
+		@FindBy(xpath = "//label[text()='Expense Type']/following::input[2]")
+		WebElement amountfield;
+		
+		
+		@FindBy(xpath = "//label[text()='Expense Type']/following::button[2]")
+		WebElement saveExpenseButton;
+		
+		
+		@FindBy(xpath = "//div[@class='orangehrm-bottom-container']/child::p[1]")
+		WebElement totalExpenseAmount;
+	
+	
 
 		//Page class constructer
 	/**
@@ -67,7 +110,7 @@ public class ClaimsPage {
 		}
 		
 	
-	//Page operation methods
+	//Page operation methods for claims page
 	
 	public void navigateToClaimsPage() {
 		ElementActions.clickElement(driver, claimsPageLink, scenario);
@@ -106,5 +149,57 @@ public class ClaimsPage {
 	public void deletenewlyAddedEvent() {
 		ElementActions.clickElement(driver, deleteeventButton, scenario);
 		ElementActions.clickElement(driver, deleteConfirmButton, scenario);
+	
 	}
+	
+	
+	// operation methods for adding claim expenses
+
+		public void sumbitClaims() {
+			WaitMethods.staticWait(5000);
+			ElementActions.clickElement(driver, submiclaimsMenu, scenario);
+		}
+	
+		public void selecteventandcurrency() {
+
+			ElementActions.clickElement(driver, eventDropdown, scenario);
+			Actions objactions = new Actions(driver);
+			WaitMethods.staticWait(2000);
+			objactions.sendKeys(Keys.ARROW_DOWN).build().perform();
+			WaitMethods.staticWait(5000);
+			objactions.sendKeys(Keys.ENTER).build().perform();
+			WaitMethods.staticWait(2000);
+			ElementActions.clickElement(driver, currencyDropdown, scenario);
+			objactions.sendKeys(Keys.ARROW_DOWN).build().perform();
+			WaitMethods.staticWait(5000);
+			objactions.sendKeys(Keys.ENTER).build().perform();
+			WaitMethods.staticWait(2000);
+			ElementActions.clickElement(driver, createButton, scenario);
+			WaitMethods.staticWait(10000);
+		}
+		public void addExpense(String expenseDate, String expenseAmount) {
+			Actions objactions = new Actions(driver);
+			WaitMethods.staticWait(2000);
+			ElementActions.clickElement(driver, addexpenceButton, scenario);
+			WaitMethods.staticWait(5000);
+			ElementActions.clickElement(driver, expenceTypeDropdown, scenario);
+			objactions.sendKeys(Keys.ARROW_DOWN).build().perform();
+			WaitMethods.staticWait(2000);
+			objactions.sendKeys(Keys.ENTER).build().perform();
+			WaitMethods.staticWait(5000);
+			ElementActions.sendKeys(driver, dateField, scenario, expenseDate);
+			WaitMethods.staticWait(2000);
+			ElementActions.sendKeys(driver, amountfield, scenario, expenseAmount);
+			WaitMethods.staticWait(2000);
+			ElementActions.clickElement(driver, saveExpenseButton, scenario);
+			WaitMethods.staticWait(2000);
+
+		}
+		
+	
+		public String getTotalAmount() {
+			return ElementActions.getText(driver, totalExpenseAmount, scenario).split(":")[1];
+		}
+		
+	
 }
